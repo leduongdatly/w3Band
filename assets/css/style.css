@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* common */
+
+.clear {
+    clear: both;
+}
+
+.text-color {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-3 {
+    width: 33.33333%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.float-right {
+    float: right;
+}
+
+/* header */
+
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#header #nav {
+    display: block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav .down {
+    font-size: 10px;
+}
+
+#nav li a {
+    line-height: 46px;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav a {
+    color: #000;
+    display: block;
+    padding: 0 8px;
+    min-width: 160px;
+}
+
+#header .menu-btn,
+#header .search-btn {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .menu-btn:hover .menu {
+    color: #000;
+}
+
+#header .menu-btn .menu,
+#header .search-btn .search {
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    font-size: 18px;
+}
+
+
+#slide {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+.slider-content {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    margin-bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+
+.name {
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.content {
+    font-weight: 700;
+}
+
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .heading-section {
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+#content .sub-heading-section {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0.6;
+}
+
+#content .text-content {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .avatar {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+.ticket-box {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    list-style: none;
+}
+
+.ticket-list li {
+    color: #757575;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-out {
+    background-color: rgb(244, 67, 54);
+    color: #fff;
+    margin-left: 16px;
+    padding: 3px 4px;
+}
+
+.have-ticket {
+    margin-top: -2px;
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    line-height: 24px;
+    padding: 0px 9px;
+    border-radius: 50%;
+}
+
+.place-list {
+    margin-top: 32px;
+}
+
+.place-content {
+    padding: 15px;
+    color: #000;
+    background-color: #fff;
+}
+
+.place {
+    width: 100%;
+    display: block;
+}
+
+.place:hover {
+    opacity: 0.6;
+}
+
+#content .place-heading {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#content .date {
+    font-size: 15px;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+#content .place-text {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#content .buy-ticket {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: inline-block;
+}
+
+#content .buy-ticket:hover {
+    color: #000;
+    background-color: #757575;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.form-control {
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.send {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 17px;
+}
+.send:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+/* map */
+.map img {
+    width: 100%;
+}
+
+/* footer */
+#footer {
+    font-size: 20px;
+    color: #000;
+    opacity: 0.8;
+}
+
+#footer .content-section {
+    padding: 64px 16px;
+}
+
+#footer .contact {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#footer i:hover {
+    opacity: 0.6;
+}
+
+#footer a {
+    color: #757575;
+    text-decoration: underline;
+}
