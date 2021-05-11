@@ -22,7 +22,7 @@
 @media (max-width: 740px) {
     #nav {
         display: block;
-        width: 100%;
+        width: 83%;
     }
     #nav > li {
         display: block;
@@ -35,5 +35,9 @@
     }
     #header .search-btn {
         display: none;
+    }
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
     }
 }
